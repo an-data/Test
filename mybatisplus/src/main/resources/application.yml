@@ -1,5 +1,6 @@
 spring:
-  datasource: jdbc:mysql://182.151.214.208:8989/zxt_test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+  datasource:
+    url: jdbc:mysql://182.151.214.208:8989/zxt_test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: cwxxhgs666
     driver-class-name: com.mysql.cj.jdbc.Driver
