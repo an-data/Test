@@ -1,5 +1,9 @@
 package com.t.bean;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -17,10 +21,11 @@ import java.util.Date;
  */
 @Data
 @Accessors(chain = true)
+@TableName("t_vip_user")
 public class VipUser implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+    @TableId
     private String id;
 
 
@@ -32,7 +37,7 @@ public class VipUser implements Serializable {
 
     private String realName;
 
-
+    @TableField(fill = FieldFill.UPDATE)
     private String nickName;
 
 

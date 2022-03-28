@@ -11,6 +11,8 @@
         <module>amqp</module>
         <module>pagehelper</module>
         <module>mybatisplus</module>
+        <module>springboot</module>
+        <module>gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
