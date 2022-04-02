@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: gateway
+  profiles:
+    active: dev
+
+  cloud:
+
+    nacos:
+      discovery:
+        server-addr: nacos.cwyb56.com
+        username: nacos
+        password: 1qaz2wsx9ol.
+        namespace: test
+      #       namespace: f58ed321-e6a5-4257-b6e1-92ad4f08c8f8
+#      config:
+#        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+#        username: ${spring.cloud.nacos.discovery.username}
+#        password: ${spring.cloud.nacos.discovery.password}
+#        namespace: ${spring.cloud.nacos.discovery.namespace}
+#        file-extension: yaml
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedHeaders: "*"
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - OPTION
+              - OPTIONS
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9999
