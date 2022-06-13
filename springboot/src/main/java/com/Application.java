@@ -1,6 +1,7 @@
 package com;
 
 import org.apache.catalina.core.ApplicationFilterFactory;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +18,6 @@ import java.util.logging.Filter;
  * @Created by yangmx
  */
 @SpringBootApplication
-@Lazy
 @ServletComponentScan
 public class Application {
 //   BeanPostProcessor
