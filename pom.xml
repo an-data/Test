@@ -15,6 +15,7 @@
         <module>gateway</module>
         <module>xxx-job</module>
         <module>jimureport</module>
+        <module>socketTest</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
