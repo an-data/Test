@@ -16,6 +16,7 @@
         <module>xxx-job</module>
         <module>jimureport</module>
         <module>socketTest</module>
+        <module>concurrent</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
